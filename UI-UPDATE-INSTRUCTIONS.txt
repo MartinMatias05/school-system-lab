@@ -1,0 +1,22 @@
+CAMPUSCORE PROFESSIONAL UI UPDATE
+
+This is a safe overlay update for an existing school-system-lab install.
+It updates only the routes, dashboard controller, Blade layout/views, and CSS.
+It does NOT contain .env, vendor, migrations, or database data.
+
+1. Stop the Laravel server in CMD with Ctrl+C.
+2. Extract this ZIP into C:\xampp\htdocs and allow Windows to merge the
+   school-system-lab folder and replace the listed files.
+3. In VS Code CMD, return to the project:
+     cd /d C:\xampp\htdocs\school-system-lab
+4. Clear the view/route cache:
+     php artisan optimize:clear
+5. Start again:
+     php artisan serve
+6. Open http://127.0.0.1:8000 (the home page now redirects to the dashboard).
+
+No database migration is needed, and existing student/course/activity records
+will remain in the existing MySQL database.
+
+NOTE: The Administrator profile in the interface is a visual label. The
+current exam project does not include login/authentication or real user roles.

@@ -1,0 +1,24 @@
+
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+
+# Environment files and secrets
+/.env
+/.env.*
+!/.env.example
+
+# Laravel generated files
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*.php
+
+# Development tools
+.phpunit.result.cache
+/.idea
+/.vscode
